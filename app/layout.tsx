@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Cormorant, Inter } from "next/font/google";
 import "./globals.css";
 
-const sans = DM_Sans({ variable: "--font-sans", subsets: ["latin"] });
-const serif = Cormorant_Garamond({ variable: "--font-serif", subsets: ["latin"], weight: ["400", "500", "600"], style: ["normal", "italic"] });
+const sans = Inter({ variable: "--font-sans", subsets: ["latin"] });
+const serif = Cormorant({ variable: "--font-serif", subsets: ["latin"], weight: ["400", "500", "600"], style: ["normal", "italic"] });
 
 export const metadata: Metadata = {
-  title: "Itagra | Parcelas de agrado",
-  description: "Proyectos inmobiliarios que conectan naturaleza, tranquilidad y futuro. Conoce Pircas de Lliu Lliu, nuestro primer proyecto en Limache.",
-  metadataBase: new URL("https://itagra.cl"),
-  icons: { icon: "/images/itagra-mark.png", apple: "/images/itagra-mark.png" },
+  title: "Pircas de Lliu Lliu | Parcelas en Limache",
+  description: "Parcelas planas de 5.000 m² con rol propio, agua y luz en Limache, desde 2.250 UF.",
+  metadataBase: new URL("https://pircasdelliulliu.cl"),
+  icons: { icon: "/images/pircas/PIRCAS-DE-LLIU-LLIU.png", apple: "/images/pircas/PIRCAS-DE-LLIU-LLIU.png" },
   openGraph: {
-    title: "Itagra | Tierra para vivir lo que importa",
-    description: "Conoce Pircas de Lliu Lliu, parcelas de agrado en Limache.",
+    title: "Pircas de Lliu Lliu | Parcelas en Limache",
+    description: "Vive entre la naturaleza y la ciudad en la parcela de tus sueños.",
     images: [{ url: "/og.png", width: 1731, height: 909, alt: "Itagra · Pircas de Lliu Lliu" }],
     locale: "es_CL",
     type: "website",

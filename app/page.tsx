@@ -1,142 +1,50 @@
 import Image from "next/image";
+import PillarsCarousel from "./PillarsCarousel";
 
-const qualities = [
-  {
-    number: "01",
-    title: "Tierra que se proyecta",
-    text: "Seleccionamos ubicaciones con potencial, conectividad y una relación auténtica con su entorno.",
-  },
-  {
-    number: "02",
-    title: "Certeza desde el origen",
-    text: "Proyectos claros, con infraestructura resuelta y antecedentes que entregan tranquilidad al decidir.",
-  },
-  {
-    number: "03",
-    title: "Una mejor forma de habitar",
-    text: "Espacios para vivir con más calma, naturaleza y libertad, sin renunciar a la cercanía de la ciudad.",
-  },
+const features = [
+  { title: "Parcelas Planas", text: "5.000 m² planos, con una ubicación privilegiada, a minutos de la ciudad.", image: "/images/pircas/DJI_0164-scaled.jpeg" },
+  { title: "Vegetación Nativa", text: "Rodeado de espinos, boldos y quillayes propios de la zona.", image: "/images/pircas/DSC_0210.jpg" },
+  { title: "Servicios", text: "Parcelas con agua, luz, pavimentación y portón de acceso.", image: "/images/pircas/DSC_0340.jpg" },
+  { title: "Rol Propio", text: "Proyecto aprobado y registrado en el SAG.", image: "/images/pircas/DSC_0275.jpg" },
 ];
 
 export default function Home() {
-  return (
-    <main>
-      <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="Itagra, inicio">
-          <img src="/images/itagra-logo.png" alt="Itagra Parcelas de Agrado" width="194" height="80" />
-        </a>
-        <nav className="desktop-nav" aria-label="Navegación principal">
-          <a href="#itagra">Nosotros</a>
-          <a href="#proyecto">Proyecto</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
-        <a className="header-cta" href="https://pircasdelliulliu.cl" target="_blank" rel="noreferrer">
-          Conocer Pircas <span aria-hidden="true">↗</span>
-        </a>
-        <details className="mobile-menu">
-          <summary aria-label="Abrir menú"><span></span><span></span></summary>
-          <nav aria-label="Navegación móvil">
-            <a href="#itagra">Nosotros</a>
-            <a href="#proyecto">Proyecto</a>
-            <a href="#contacto">Contacto</a>
-            <a href="https://pircasdelliulliu.cl" target="_blank" rel="noreferrer">Conocer Pircas ↗</a>
-          </nav>
-        </details>
-      </header>
+  return <main>
+    <header className="header">
+      <a href="#inicio" className="brand" aria-label="Pircas de Lliu Lliu, inicio"><Image src="/images/pircas/LOGO-PIRCAS-DE-LLIU-LLIU.png" width={260} height={74} alt="Pircas de Lliu Lliu" priority /></a>
+      <nav aria-label="Navegación principal"><a href="#proyecto">Proyecto</a><a href="#parcelas">Parcelas</a><a href="#ubicacion">Ubicación</a><a href="#contacto">Contacto</a></nav>
+      <a className="nav-cta" href="https://wa.me/56948544996" target="_blank" rel="noreferrer">Reserva tu parcela <span>↗</span></a>
+      <details className="mobile-menu"><summary aria-label="Abrir menú"><i /><i /></summary><div><a href="#proyecto">Proyecto</a><a href="#parcelas">Parcelas</a><a href="#ubicacion">Ubicación</a><a href="#contacto">Contacto</a></div></details>
+    </header>
 
-      <section className="hero" id="inicio">
-        <Image className="hero-image" src="/images/pircas-aerial.jpeg" alt="Vista aérea de los terrenos y cerros de Lliu Lliu" fill priority sizes="100vw" />
-        <div className="hero-wash" />
-        <div className="hero-content">
-          <p className="eyebrow light"><span /> Parcelas de agrado · Región de Valparaíso</p>
-          <h1>Tierra para vivir<br />lo que importa.</h1>
-          <p className="hero-copy">Desarrollamos proyectos que conectan naturaleza, tranquilidad y futuro en lugares elegidos con propósito.</p>
-          <a className="circle-link" href="#proyecto" aria-label="Descubrir primer proyecto">
-            <span>Descubrir<br />proyecto</span><b aria-hidden="true">↓</b>
-          </a>
-        </div>
-        <div className="hero-index"><span>Primer proyecto</span><strong>01</strong></div>
-      </section>
+    <section className="hero" id="inicio">
+      <div className="hero-title"><h1><span>PIRCAS DE</span><span>LLIU LLIU</span></h1></div>
+      <div className="hero-media">
+        <iframe src="https://www.youtube.com/embed/EYgH7Y2P_XA?autoplay=1&mute=1&loop=1&playlist=EYgH7Y2P_XA&controls=0&rel=0&playsinline=1&modestbranding=1" title="Video de Pircas de Lliu Lliu" allow="autoplay; encrypted-media; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin" />
+        <a className="play" href="https://youtu.be/EYgH7Y2P_XA" target="_blank" rel="noreferrer" aria-label="Ver video con sonido">▶ <small>Ver con sonido</small></a>
+      </div>
+    </section>
 
-      <section className="intro" id="itagra">
-        <div className="section-label"><span>01</span><p>Quiénes somos</p></div>
-        <div className="intro-copy">
-          <p className="kicker">Una mirada distinta sobre la tierra</p>
-          <h2>En Itagra creemos que elegir dónde vivir es también elegir <em>cómo queremos vivir.</em></h2>
-          <div className="intro-bottom">
-            <p>Creamos parcelas de agrado con identidad, infraestructura y una conexión honesta con el paisaje. Proyectos pensados para disfrutar hoy y proyectarse hacia mañana.</p>
-            <img src="/images/itagra-mark.png" alt="Símbolo Itagra" width="126" height="126" />
-          </div>
-        </div>
-      </section>
+    <section className="statement" id="proyecto"><h2>Vive entre la <span className="inline-img"><Image src="/images/pircas/DSC_0310.jpg" fill alt="Naturaleza de Lliu Lliu" sizes="160px" /></span> naturaleza y la ciudad <span className="inline-img"><Image src="/images/pircas/DJI_0180-scaled.jpeg" fill alt="Paisaje de Limache" sizes="160px" /></span> en la parcela de tus sueños</h2></section>
 
-      <section className="project" id="proyecto">
-        <div className="project-photo">
-          <Image src="/images/pircas-fields.jpeg" alt="Parcelas planas en Pircas de Lliu Lliu" fill sizes="(max-width: 900px) 100vw, 55vw" />
-          <p>Limache · V Región</p>
-        </div>
-        <div className="project-info">
-          <p className="eyebrow"><span /> Proyectos · 01 activo</p>
-          <div className="project-number">01</div>
-          <img className="pircas-logo" src="/images/pircas-logo.png" alt="Pircas de Lliu Lliu" width="270" height="91" />
-          <h2>Entre la naturaleza<br />y la ciudad.</h2>
-          <p>Parcelas planas de 5.000 m² en Limache, con rol propio, agua, luz y una ubicación conectada con la ciudad.</p>
-          <div className="project-tags"><span>Limache</span><span>V Región</span><span>Desde 2.250 UF</span></div>
-          <a className="text-link" href="https://pircasdelliulliu.cl" target="_blank" rel="noreferrer">Ver más en Pircas de Lliu Lliu <span>↗</span></a>
-        </div>
-      </section>
+    <PillarsCarousel />
 
-      <section className="project-future" aria-label="Próximos proyectos de Itagra">
-        <p>Portafolio Itagra</p>
-        <h2>Este es el comienzo.</h2>
-        <div><span>01 proyecto disponible</span><span>Próximamente nuevos lugares</span></div>
-      </section>
+    <section className="marquee" aria-label="Parcelas planas, rol propio, agua y luz, naturaleza nativa">
+      <div className="marquee-track">
+        <span>PARCELAS PLANAS · ROL PROPIO · AGUA Y LUZ · NATURALEZA NATIVA ·&nbsp;</span>
+        <span aria-hidden="true">PARCELAS PLANAS · ROL PROPIO · AGUA Y LUZ · NATURALEZA NATIVA ·&nbsp;</span>
+      </div>
+    </section>
+    <section className="location-intro"><p>PIRCAS DE LLIU LLIU · LIMACHE</p><h2>Parcelas Planas con acceso rápido al centro de Limache y Olmué.<br />A sólo 30 min de Viña del Mar</h2></section>
+    <section className="photo-band"><Image src="/images/pircas/pircasdellliulliudia3-7.jpeg" alt="Camino interior y naturaleza de Pircas de Lliu Lliu" fill sizes="100vw" /></section>
 
-      <section className="principles">
-        <div className="section-label"><span>02</span><p>Nuestra forma de hacer</p></div>
-        <div className="principles-content">
-          <h2>Proyectos con<br /><em>propósito.</em></h2>
-          <div className="quality-list">
-            {qualities.map((quality) => (
-              <article key={quality.number}>
-                <span>{quality.number}</span>
-                <div><h3>{quality.title}</h3><p>{quality.text}</p></div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+    <section className="details-section"><div className="details-image"><Image src="/images/pircas/DSC_0290.jpg" alt="Paisaje del proyecto" fill sizes="(max-width: 800px) 100vw, 48vw" /></div><div className="details-copy"><p>UN LUGAR PARA PROYECTARTE</p><h2>Parcelas totalmente planas desde 2.250 UF</h2><p>En Pircas de Lliu Lliu todas las parcelas cuentan con luz y agua canalizadas bajo tierra y totalmente operativas. Además, los caminos interiores han sido trabajados por capas para resistir mejor durante todo el año.</p><a href="#contacto">Quiero conocer el proyecto <span>↗</span></a></div></section>
 
-      <section className="contact" id="contacto">
-        <Image src="/images/pircas-view.jpeg" alt="Paisaje natural de Lliu Lliu" fill sizes="100vw" />
-        <div className="contact-overlay" />
-        <div className="contact-content">
-          <div className="contact-intro">
-            <p className="eyebrow light"><span /> Contacto</p>
-            <h2>Conversemos sobre<br />tu próximo lugar.</h2>
-          </div>
-          <div className="contact-details">
-            <div><small>Proyecto disponible</small><strong>Pircas de Lliu Lliu</strong></div>
-            <div><small>Ubicación</small><strong>Limache · V Región</strong></div>
-            <div><small>Correo</small><a href="mailto:info@itagra.cl">info@itagra.cl</a></div>
-            <div><small>Teléfono</small><a href="tel:+56948544996">+56 9 4854 4996</a></div>
-            <a href="https://pircasdelliulliu.cl/contacto/" target="_blank" rel="noreferrer">Ir a contacto <span>↗</span></a>
-          </div>
-        </div>
-      </section>
+    <section className="features"><p>¿POR QUÉ ELEGIR PIRCAS DE LLIU LLIU?</p><h2>Estos son los puntos más importantes para elegir vivir aquí</h2><div className="feature-grid">{features.map((feature, index) => <article key={feature.title}><Image src={feature.image} alt={feature.title} fill sizes="(max-width: 700px) 86vw, 25vw" /><div><span>0{index + 1}</span><h3>{feature.title}</h3><p>{feature.text}</p></div></article>)}</div></section>
 
-      <footer>
-        <div className="footer-top">
-          <img src="/images/itagra-logo.png" alt="Itagra Parcelas de Agrado" width="220" height="91" />
-          <p>Proyectos para vivir con más<br />naturaleza, espacio y propósito.</p>
-          <div className="footer-links">
-            <a href="mailto:info@itagra.cl">info@itagra.cl</a>
-            <a href="tel:+56948544996">+56 9 4854 4996</a>
-            <a href="#proyecto">Ver proyectos</a>
-          </div>
-        </div>
-        <div className="footer-bottom"><span>© {new Date().getFullYear()} Itagra</span><span>Limache · Región de Valparaíso</span></div>
-      </footer>
-    </main>
-  );
+    <section className="availability" id="ubicacion"><div className="map-image"><Image src="/images/pircas/2-Plano-Parcelas.png" alt="Plano de parcelas disponibles" fill sizes="(max-width: 800px) 100vw, 50vw" /></div><div className="availability-copy"><p>DISPONIBILIDAD ACTUAL</p><h2>Parcelas <em>Disponibles</em></h2><p>La ubicación exacta y el acceso al proyecto están disponibles en el mapa. Confirma siempre la disponibilidad directamente con nuestro equipo.</p><a className="button dark" href="https://maps.app.goo.gl/BNiV3YVLTCPZhUaV8" target="_blank" rel="noreferrer">Ubicación en mapa <span>↗</span></a></div></section>
+
+    <section className="contact" id="contacto"><p>PIRCAS DE LLIU LLIU · LIMACHE</p><h2>¿Listo para sembrar<br />tu futuro?</h2><p>Contáctanos para conocer nuestras parcelas y descubre el potencial de invertir en tierra.</p><div className="contact-links"><a href="https://wa.me/56948544996" target="_blank" rel="noreferrer">Whatsapp ↗</a><a href="mailto:info@itagra.cl">info@itagra.cl ↗</a></div></section>
+    <footer><Image src="/images/pircas/LOGO-PIRCAS-DE-LLIU-LLIU.png" alt="Pircas de Lliu Lliu" width={250} height={72} /><p>Parcelas planas de 5.000 m² con la mejor plusvalía y acceso en Limache.</p><div><span>© 2026 Pircas de Lliu Lliu</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+  </main>;
 }
