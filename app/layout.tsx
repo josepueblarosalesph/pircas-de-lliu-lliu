@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   title: "Pircas de Lliu Lliu | Parcelas en Limache",
   description: "Parcelas planas de 5.000 m² con rol propio, agua y luz en Limache, desde 2.250 UF.",
   metadataBase: new URL("https://pircasdelliulliu.cl"),
-  icons: { icon: "/images/pircas/PIRCAS-DE-LLIU-LLIU.png", apple: "/images/pircas/PIRCAS-DE-LLIU-LLIU.png" },
+  icons: {
+    icon: [{ url: "/favicon.png?v=2", type: "image/png", sizes: "512x512" }],
+    shortcut: "/favicon.png?v=2",
+    apple: "/favicon.png?v=2",
+  },
   openGraph: {
     title: "Pircas de Lliu Lliu | Parcelas en Limache",
     description: "Vive entre la naturaleza y la ciudad en la parcela de tus sueños.",
