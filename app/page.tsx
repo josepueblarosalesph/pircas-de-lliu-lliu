@@ -20,7 +20,7 @@ export default function Home() {
     <section className="hero" id="inicio">
       <div className="hero-title"><h1><span>PIRCAS DE</span><span>LLIU LLIU</span></h1></div>
       <div className="hero-media">
-        <iframe src="https://www.youtube.com/embed/EYgH7Y2P_XA?autoplay=1&mute=1&loop=1&playlist=EYgH7Y2P_XA&controls=0&rel=0&playsinline=1&modestbranding=1" title="Video de Pircas de Lliu Lliu" allow="autoplay; encrypted-media; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin" />
+        <iframe src="https://www.youtube-nocookie.com/embed/EYgH7Y2P_XA?autoplay=1&mute=1&loop=1&playlist=EYgH7Y2P_XA&controls=0&rel=0&playsinline=1&modestbranding=1&disablekb=1&fs=0&iv_load_policy=3" title="Video de Pircas de Lliu Lliu" allow="autoplay; encrypted-media; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin" />
         <a className="play" href="https://youtu.be/EYgH7Y2P_XA" target="_blank" rel="noreferrer" aria-label="Ver video con sonido">▶ <small>Ver con sonido</small></a>
       </div>
     </section>
