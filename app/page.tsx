@@ -51,7 +51,11 @@ export default function Home() {
       <a className="itagra-link" href="https://itagra.cl" target="_blank" rel="noreferrer" aria-label="Visitar Itagra">
         <span>Un proyecto de</span><Image src="/images/itagra-logo.png" alt="Itagra Parcelas de Agrado" width={194} height={80} />
       </a>
-      <div><span>© 2026 Pircas de Lliu Lliu</span><a href="#inicio">Volver arriba ↑</a></div>
+      <div>
+        <span>© 2026 Pircas de Lliu Lliu</span>
+        <a href="https://www.instagram.com/pircas.de.lliulliu" target="_blank" rel="noreferrer" aria-label="Instagram de Pircas de Lliu Lliu">Instagram ↗</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
     </footer>
   </main>;
 }
