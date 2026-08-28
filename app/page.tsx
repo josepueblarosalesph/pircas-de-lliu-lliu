@@ -45,6 +45,13 @@ export default function Home() {
     <section className="availability" id="ubicacion"><div className="map-image"><Image src="/images/pircas/2-Plano-Parcelas.png" alt="Plano de parcelas disponibles" fill sizes="(max-width: 800px) 100vw, 50vw" /></div><div className="availability-copy"><p>DISPONIBILIDAD ACTUAL</p><h2>Parcelas <em>Disponibles</em></h2><p>La ubicación exacta y el acceso al proyecto están disponibles en el mapa. Confirma siempre la disponibilidad directamente con nuestro equipo.</p><a className="button dark" href="https://maps.app.goo.gl/BNiV3YVLTCPZhUaV8" target="_blank" rel="noreferrer">Ubicación en mapa <span>↗</span></a></div></section>
 
     <section className="contact" id="contacto"><p>PIRCAS DE LLIU LLIU · LIMACHE</p><h2>¿Listo para sembrar<br />tu futuro?</h2><p>Contáctanos para conocer nuestras parcelas y descubre el potencial de invertir en tierra.</p><div className="contact-links"><a href="https://wa.me/56948544996" target="_blank" rel="noreferrer">Whatsapp ↗</a><a href="mailto:info@itagra.cl">info@itagra.cl ↗</a></div></section>
-    <footer><Image src="/images/pircas/LOGO-PIRCAS-DE-LLIU-LLIU.png" alt="Pircas de Lliu Lliu" width={250} height={72} /><p>Parcelas planas de 5.000 m² con la mejor plusvalía y acceso en Limache.</p><div><span>© 2026 Pircas de Lliu Lliu</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+    <footer>
+      <Image src="/images/pircas/LOGO-PIRCAS-DE-LLIU-LLIU.png" alt="Pircas de Lliu Lliu" width={250} height={72} />
+      <p>Parcelas planas de 5.000 m² con la mejor plusvalía y acceso en Limache.</p>
+      <a className="itagra-link" href="https://itagra.cl" target="_blank" rel="noreferrer" aria-label="Visitar Itagra">
+        <span>Un proyecto de</span><Image src="/images/itagra-logo.png" alt="Itagra Parcelas de Agrado" width={194} height={80} />
+      </a>
+      <div><span>© 2026 Pircas de Lliu Lliu</span><a href="#inicio">Volver arriba ↑</a></div>
+    </footer>
   </main>;
 }
