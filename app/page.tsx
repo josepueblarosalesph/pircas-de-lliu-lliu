@@ -42,7 +42,16 @@ export default function Home() {
 
     <section className="features"><p>¿POR QUÉ ELEGIR PIRCAS DE LLIU LLIU?</p><h2>Estos son los puntos más importantes para elegir vivir aquí</h2><div className="feature-grid">{features.map((feature, index) => <article key={feature.title}><Image src={feature.image} alt={feature.title} fill sizes="(max-width: 700px) 86vw, 25vw" /><div><span>0{index + 1}</span><h3>{feature.title}</h3><p>{feature.text}</p></div></article>)}</div></section>
 
-    <section className="availability" id="ubicacion"><div className="map-image"><Image src="/images/pircas/2-Plano-Parcelas.png" alt="Plano de parcelas disponibles" fill sizes="(max-width: 800px) 100vw, 50vw" /></div><div className="availability-copy"><p>DISPONIBILIDAD ACTUAL</p><h2>Parcelas <em>Disponibles</em></h2><p>La ubicación exacta y el acceso al proyecto están disponibles en el mapa. Confirma siempre la disponibilidad directamente con nuestro equipo.</p><a className="button dark" href="https://maps.app.goo.gl/BNiV3YVLTCPZhUaV8" target="_blank" rel="noreferrer">Ubicación en mapa <span>↗</span></a></div></section>
+    <section className="availability" id="ubicacion">
+      <div className="map-wrap">
+        <a className="map-image" href="/images/pircas/2-Plano-Parcelas.png" target="_blank" rel="noreferrer" aria-label="Abrir plano actualizado de parcelas a tamaño completo">
+          <Image src="/images/pircas/2-Plano-Parcelas.png" alt="Plano actualizado de disponibilidad de parcelas de Pircas de Lliu Lliu" fill sizes="(max-width: 800px) 100vw, 56vw" />
+          <span>Abrir plano completo ↗</span>
+        </a>
+        <p>Plano actualizado · La disponibilidad puede cambiar sin previo aviso</p>
+      </div>
+      <div className="availability-copy"><p>PLANO ACTUALIZADO</p><h2>Parcelas <em>Disponibles</em></h2><p>Consulta la distribución y el estado actual de cada parcela. Para confirmar disponibilidad, valores y reservar una visita, contáctanos directamente.</p><a className="button dark" href="https://maps.app.goo.gl/BNiV3YVLTCPZhUaV8" target="_blank" rel="noreferrer">Ubicación en mapa <span>↗</span></a></div>
+    </section>
 
     <section className="contact" id="contacto"><p>PIRCAS DE LLIU LLIU · LIMACHE</p><h2>¿Listo para sembrar<br />tu futuro?</h2><p>Contáctanos para conocer nuestras parcelas y descubre el potencial de invertir en tierra.</p><div className="contact-links"><a href="https://wa.me/56948544996" target="_blank" rel="noreferrer">Whatsapp ↗</a><a href="mailto:info@itagra.cl">info@itagra.cl ↗</a></div></section>
     <footer>
