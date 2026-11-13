@@ -88,7 +88,7 @@ export default function Home() {
         <figure className="utilities-image"><Image src="/images/pircas/DSC_0340.jpg" alt="Arranques de servicios canalizados para las parcelas de Pircas de Lliu Lliu" fill sizes="(max-width: 850px) 100vw, 52vw" /><figcaption>Redes subterráneas · Servicios operativos</figcaption></figure>
         <div className="utilities-list">
           <article><span>01</span><div><p>AGUA</p><h3>Agua de pozo potabilizada</h3><p>Cada parcela cuenta con acceso a agua de pozo potabilizada, distribuida mediante una red canalizada bajo tierra y actualmente operativa.</p></div></article>
-          <article><span>02</span><div><p>ELECTRICIDAD</p><h3>Energía Chilquinta</h3><p>El suministro eléctrico Chilquinta ya está operativo y llega canalizado bajo tierra a todas las parcelas del proyecto.</p></div></article>
+          <article><span>02</span><div><p>ELECTRICIDAD</p><h3>Energía Chilquinta</h3><p>El suministro eléctrico Chilquinta ya está operativo y llega canalizado bajo tierra a todas las parcelas del proyecto. Cada parcela dispone de su tablero eléctrico individual instalado y preparado para conexión, facilitando el acceso inmediato al servicio.</p></div></article>
           <div className="utilities-status"><i /> Agua y luz disponibles en todas las parcelas</div>
         </div>
       </div>
