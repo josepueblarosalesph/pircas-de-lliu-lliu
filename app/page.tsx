@@ -26,6 +26,11 @@ const galleryPhotos = [
   { file: "21", alt: "Entorno del acceso a Pircas de Lliu Lliu" },
   { file: "22", alt: "Portón eléctrico de acceso al proyecto" },
   { file: "23", alt: "Cámaras de seguridad instaladas en el acceso" },
+  { file: "drone-73", alt: "Vista aérea de Pircas de Lliu Lliu y el valle de Limache" },
+  { file: "drone-69", alt: "Camino principal y entorno natural vistos desde el aire" },
+  { file: "drone-62", alt: "Atardecer sobre el valle y los terrenos del proyecto" },
+  { file: "drone-55", alt: "Vista panorámica del proyecto y las montañas de Lliu Lliu" },
+  { file: "drone-49", alt: "Panorámica aérea de Pircas de Lliu Lliu" },
 ];
 
 export default function Home() {
@@ -70,6 +75,22 @@ export default function Home() {
       <div className="security-images">
         <figure className="security-camera"><Image src="/images/pircas/octubre-2026/pircas-23.jpg" alt="Cámaras de seguridad instaladas en el acceso de Pircas de Lliu Lliu" fill sizes="(max-width: 850px) 100vw, 36vw" /><figcaption>Cámaras de seguridad</figcaption></figure>
         <figure className="security-gate"><Image src="/images/pircas/octubre-2026/pircas-22.jpg" alt="Portón eléctrico de acceso a Pircas de Lliu Lliu" fill sizes="(max-width: 850px) 72vw, 24vw" /><figcaption>Portón eléctrico</figcaption></figure>
+      </div>
+    </section>
+
+    <section className="utilities-section" id="servicios" aria-labelledby="servicios-title">
+      <div className="utilities-heading">
+        <p>SERVICIOS OPERATIVOS</p>
+        <h2 id="servicios-title">Todo listo para<br /><em>proyectar tu futuro.</em></h2>
+        <p>Todas las parcelas cuentan con acceso a agua y electricidad mediante redes canalizadas bajo tierra.</p>
+      </div>
+      <div className="utilities-layout">
+        <figure className="utilities-image"><Image src="/images/pircas/DSC_0340.jpg" alt="Arranques de servicios canalizados para las parcelas de Pircas de Lliu Lliu" fill sizes="(max-width: 850px) 100vw, 52vw" /><figcaption>Redes subterráneas · Servicios operativos</figcaption></figure>
+        <div className="utilities-list">
+          <article><span>01</span><div><p>AGUA</p><h3>Agua de pozo potabilizada</h3><p>Cada parcela cuenta con acceso a agua de pozo potabilizada, distribuida mediante una red canalizada bajo tierra y actualmente operativa.</p></div></article>
+          <article><span>02</span><div><p>ELECTRICIDAD</p><h3>Energía Chilquinta</h3><p>El suministro eléctrico Chilquinta ya está operativo y llega canalizado bajo tierra a todas las parcelas del proyecto.</p></div></article>
+          <div className="utilities-status"><i /> Agua y luz disponibles en todas las parcelas</div>
+        </div>
       </div>
     </section>
 

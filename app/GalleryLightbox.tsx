@@ -37,7 +37,7 @@ export default function GalleryLightbox({ photos }: { photos: GalleryPhoto[] }) 
 
   return <>
     <div className="gallery-grid">
-      {photos.map((photo, index) => <button key={photo.file} type="button" className={`gallery-item gallery-item-${index + 1}`} onClick={() => setActiveIndex(index)} aria-label={`Ampliar fotografía: ${photo.alt}`}>
+      {photos.map((photo, index) => <button key={photo.file} type="button" className={`gallery-item gallery-item-${index + 1}`} style={photo.file.startsWith("drone-") ? { aspectRatio: "3 / 2" } : undefined} onClick={() => setActiveIndex(index)} aria-label={`Ampliar fotografía: ${photo.alt}`}>
         <Image src={`/images/pircas/octubre-2026/pircas-${photo.file}.jpg`} alt={photo.alt} fill sizes="(max-width: 850px) 50vw, 33vw" />
         <span>Ver foto ↗</span>
       </button>)}
