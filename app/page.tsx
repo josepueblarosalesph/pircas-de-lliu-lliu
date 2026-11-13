@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PillarsCarousel from "./PillarsCarousel";
+import GalleryLightbox from "./GalleryLightbox";
 
 const features = [
   { title: "Parcelas Planas", text: "5.000 m² planos, con una ubicación privilegiada, a minutos de la ciudad.", image: "/images/pircas/DJI_0164-scaled.jpeg" },
@@ -76,9 +77,7 @@ export default function Home() {
 
     <section className="gallery" id="galeria" aria-labelledby="gallery-title">
       <div className="gallery-heading"><p>OCTUBRE 2026 · PIRCAS DE LLIU LLIU</p><h2 id="gallery-title">El proyecto,<br /><em>tal como se vive.</em></h2><p>Recorre sus caminos, paisajes y rincones a través de una nueva selección de fotografías.</p></div>
-      <div className="gallery-grid">
-        {galleryPhotos.map((photo, index) => <a key={photo.file} href={`/images/pircas/octubre-2026/pircas-${photo.file}.jpg`} target="_blank" rel="noreferrer" className={`gallery-item gallery-item-${index + 1}`} aria-label={`Ampliar fotografía: ${photo.alt}`}><Image src={`/images/pircas/octubre-2026/pircas-${photo.file}.jpg`} alt={photo.alt} fill sizes="(max-width: 850px) 50vw, 33vw" /><span>Ver foto ↗</span></a>)}
-      </div>
+      <GalleryLightbox photos={galleryPhotos} />
     </section>
 
     <section className="availability" id="ubicacion">
